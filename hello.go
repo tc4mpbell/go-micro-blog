@@ -9,7 +9,7 @@ import (
 )
 
 /* GLOBAL */
-var validPath = regexp.MustCompile("^/(edit|save|view)/([a-zA-Z0-9]+)$")
+var validPath = regexp.MustCompile("^/(edit|save|view)/([a-zA-Z0-9_-]+)$")
 var templates = template.Must(template.ParseFiles("edit.html", "view.html"))
 
 func getTitle(w http.ResponseWriter, r *http.Request) (string, error)  {
