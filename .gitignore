@@ -22,3 +22,11 @@ _testmain.go
 *.exe
 *.test
 *.prof
+
+posts/*
+pw/*
+tokens/*
+
+!posts/.keep
+!pw/.keep
+!tokens/.keep
